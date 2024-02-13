@@ -1,0 +1,69 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: sort_title
+            field:
+              type: text
+              display: SortTitle
+              validate: required
+          -
+            handle: display_title
+            field:
+              type: text
+              display: DisplayTitle
+          -
+            handle: abbreviation
+            field:
+              type: text
+              display: Abbreviation
+      -
+        display: Relationships
+        fields:
+          -
+            handle: cities
+            field:
+              mode: default
+              resource: city
+              create: true
+              reorderable: false
+              type: has_many
+              display: Cities
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: tags
+            field:
+              mode: default
+              resource: tag
+              create: true
+              reorderable: false
+              type: has_many
+              display: Tags
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: created_at
+            field:
+              type: date
+              display: CreatedAt
+          -
+            handle: updated_at
+            field:
+              type: date
+              display: UpdatedAt
+title: Title

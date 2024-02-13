@@ -1,0 +1,17 @@
+<div>
+    <h6>Title: {{ sort_title }}</h6>
+        {{ if cities }}
+            <span>{{ 'Place' | plural( cities | count) }}  of Publication:</span>
+            {{ cities | sort('name') }}
+            {{ name }} |
+            {{ /cities }}
+            <br>
+        {{ /if }}
+
+    <div>
+        Tags:
+        {{ tags }}
+        {{ name }} |
+        {{ /tags }}
+    </div>
+</div>

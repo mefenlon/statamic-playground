@@ -1,0 +1,26 @@
+tabs:
+  main:
+    fields:
+      -
+        handle: name
+        field:
+          type: text
+          display: Name
+          validate: required
+      -
+        handle: state
+        field:
+          type: text
+          display: State
+  sidebar:
+    fields:
+      -
+        handle: created_at
+        field:
+          type: date
+          display: CreatedAt
+      -
+        handle: updated_at
+        field:
+          type: date
+          display: UpdatedAt
